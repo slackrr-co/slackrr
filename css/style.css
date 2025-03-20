@@ -47,7 +47,6 @@ header,
 marquee{
   align-items: center;
   border-radius: 0 0 20px 20px;
-  box-shadow: 0 5px 10px var(--uibg); 
 }
 footer.noscroll {
   position: fixed;
@@ -141,7 +140,6 @@ img {
   width: 100%;
   aspect-ratio: auto;
   user-select: none;
-  filter: drop-shadow(var(--shadow));
   image-rendering: auto;
 }
 
