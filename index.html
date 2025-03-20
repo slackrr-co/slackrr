@@ -1,22 +1,110 @@
+
 <!DOCTYPE html>
-<html>
+<html class="sl-theme-dark" lang="en">
   <head>
-    <title>Slackrr.co!</title>
+    <!-- initialize theme vars
+    https://coolors.co/10002b-240046-3c096c-5a189a-7b2cbf-9d4edd-c77dff-e0aaff -->
+
+    <!-- initialize externals -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js "></script>
+    
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.9.0/cdn/themes/dark.css" />
+     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.9.0/cdn/shoelace-autoloader.js"></script>
+  
+
+    <!-- initialize my stuff -->
+    <script src="/js/all.js"></script>
+    <script src="/js/main.js"></script>
+<script src="/js/themes.js"></script>
+    <script src="/js/randomquote.js"></script>
+    <link rel="stylesheet" href="/themes.css" />
+    <link rel="stylesheet" href="/style.css" />
+        <!--thanks to @WilardzySenpai-->
+    <link rel="stylesheet" href="loading/index.css" />
+
+
+
+    <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
+      new Crate({
+          server: '1148719137238040606', // Selenite
+          channel: '1173731814196645909' // #commands
+      })
+    </script>
+
+
+    <!-- seo + other things -->
+    <title>Slackrr.co</title>
+    <link rel="icon" href="/favicon.ico" />
   </head>
-<body>
-  <header>
-    <a href="">intro</a>
-    <a href="">websites</a>
-    <a href="">games</a>
-    <a href="">socials</a>
-    <a href="">github page</a>
-  </header>
-  <main>
-    <h1>Hello!</h1>
-  </main>
-  <footer>
-    <a>download</a>
-    <a>versions</a>
-  </footer>
-</body>
+    
+    <!--LOADING SCREEN BY @WilardzySenpai 03- -->
+    
+        <div class="preloader">
+        <div class="counter">0</div>
+    </div>
+    <section>
+    <!-- Loading Script -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript">
+	  function counter(){
+		  var count = setInterval(function(){
+			  var c = parseInt($('.counter').text());
+			  $('.counter').text((++c).toString());
+			  if (c == 100){
+				  clearInterval(count);
+				  $('.counter').addClass('hide')
+				  $('.preloader').addClass('active')
+			  }
+        // 1-100, 1 superfast countdown 50 mild countdown and so on, the higher number the slower.
+		  },25)
+	  }
+	  counter()
+</script>
+  <body>
+    
+    	<!-- <marquee> update alerts here! </marquee> -->
+    
+    <header style="align-items:center;">
+      <a href="">intro</a>
+      <a href="">websites</a>
+      <a href="/Games.html">Games</a>
+      <a href="">socials</a>
+      <a href="">github page</a>
+      <a href="/settings.html">Settings</a>
+      
+<!-- profile html file -->
+      <a href="/profile.html"><img src="img/pfp-icon.jpg" alt="profile" style="margin-left:210px; margin-top:-20px; width:42px;height:42px; position:absolute;"></a>
+      <a href="/"><img src="img/dashboard.svg" alt="dashboard" style="margin-left:214px; margin-top:-18px; width:32px;height:32px;  position:absolute;"></a>
+    </header>
+   
+    <main>
+<img src="images/index/banner.png">
+  <p id="randomquote"></p>
+      <div class="samerow">
+	    
+        <div class="img-container">
+          <a href="https://patreon.com/selenitecc"><img src="img/Digital-Patreon-Logo_White.png"></a>
+        </div>
+        <div class="img-container">
+          <a href="Games.html"><img src="img/baseline_sports_esports_white_48dp.png"></a>
+        </div>
+        <div class="img-container">
+          <a href="Tv.html"><img src="img/TV.png"></a>
+        </div>
+        <div class="img-container">
+          <a href="https://discord.gg/7jyufnwJNf"><img src="img/discord-mark-white.png"></a>
+        </div>
+      </div>
+	    
+    </main>
+    
+    <footer>
+      <a href="">Source Code</a>
+      <a href="">Discord</a>
+      <a href="">contact me</a>
+      <a href="/version.html">Version: <i>v1.o.2.1</i></a>
+    </footer>
+    
+  </body>
 </html>
